@@ -7,7 +7,7 @@ Set-AzContext -Tenant "a015f467-c5c4-4088-88cc-2f799e68eb96" -Subscription "e379
 # Create a new resource group named "sentinel" in the Central India location
 New-AzResourceGroup -Name "sentinel" -Location "Central India"
 
-# Create a new Log Analytics workspace in the "sentinel" resource group with the "PerGB" pricing tier and Central India location
+# Create a new Log Analytics workspace in the "sentinel" resource group with the "PerGB2018" pricing tier and Central India location
 New-AzOperationalInsightsWorkspace -ResourceGroupName "sentinel" -Name "Contoso-Sentinel-Suryendu" -Sku "pergb2018" -Location "Central India"
 
 # Verify that the workspace has been created successfully
